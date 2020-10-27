@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="de.jcup.drawiio.plugin.commands.category"
+            name="Sample Category">
+      </category>
+      <command
+            categoryId="de.jcup.drawiio.plugin.commands.category"
+            name="Sample Command"
+            id="de.jcup.drawiio.plugin.commands.sampleCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="de.jcup.drawiio.plugin.handlers.SampleHandler"
+            commandId="de.jcup.drawiio.plugin.commands.sampleCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="de.jcup.drawiio.plugin.commands.sampleCommand"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="de.jcup.drawiio.plugin.menus.sampleMenu"
+               label="Sample Menu"
+               mnemonic="M">
+            <command
+                  commandId="de.jcup.drawiio.plugin.commands.sampleCommand"
+                  id="de.jcup.drawiio.plugin.menus.sampleCommand"
+                  mnemonic="S">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="de.jcup.drawiio.plugin.toolbars.sampleToolbar">
+            <command
+                  id="de.jcup.drawiio.plugin.toolbars.sampleCommand"
+                  commandId="de.jcup.drawiio.plugin.commands.sampleCommand"
+                  icon="icons/sample.png"
+                  tooltip="Say hello world">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>

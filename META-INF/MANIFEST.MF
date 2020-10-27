@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Drawio eclipse plugin
+Bundle-SymbolicName: de.jcup.drawiio.plugin;singleton:=true
+Bundle-Version: 0.0.1
+Bundle-Activator: de.jcup.drawio.plugin.Activator
+Bundle-Vendor: Albert Tregnaghi
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: de.jcup.drawiio.plugin
+Bundle-ActivationPolicy: lazy

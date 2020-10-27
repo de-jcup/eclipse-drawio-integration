@@ -1,0 +1,23 @@
+== About
+This is currently only a *draft/proof of concept*. The plugin has only test action inside, only the class
+`DrawIoLocalStorageExample` does something relevant!
+
+When starting `DrawIoLocalStorageExample` it is a simple java programm and can be started 
+directly. It loads a changed variant of 
+https://github.com/jgraph/drawio-integration/blob/master/localstorage-svg.html 
+with some additional hooks inside.
+
+SWT browser will open changed file. You can edit and do drawio stuff.
+Then doing a "save" will store data in localstorage - additionally xml message 
+content will be shown in Java System out by callback...
+
+
+=== Links
+
+- https://github.com/jgraph/drawio-integration
+- https://github.com/jgraph/drawio-integration/blob/master/localstorage-svg.html#L68
+
+- https://github.com/jgraph/drawio-github
+- https://desk.draw.io/support/solutions/articles/16000042544-embed-mode
+
+- https://github.com/docToolchain/drawio-intellij-plugin
